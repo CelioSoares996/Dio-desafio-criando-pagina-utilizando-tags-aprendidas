@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro site HTML</title>
+</head>
+<body>
+    <h2 id="inicio">Assuntos abordados</h2>
+    <nav>
+    <ul>
+        <li><a href="#surgimento_html">O que é HTML?</a></li>
+        <li><a href="#surgimento_CSS">O que é CSS?</a></li>
+        <li><a href="#surgimento_js">O que é JavaScript?</a></li>
+    </ul>
+    </nav>
+    
+    <main>
+        <h1 id="surgimento_html">Desenvolvimento Web</h1>
+        <hr>
+
+        <h2 id="surgimento">Surgimento</h2>
+        
+        <p>
+            Em 1989, Tim Berners-Lee (então pesquisador do Laboratório CERN na
+            Europa) esboçou seu conceito de plataforma de computador que
+            poderia facilitar a colaboração entre pesquisadores baseados em
+            diferentes partes do mundo. Isso levou à invenção da Hypertext Markup
+            Language (HTML) em 1990.</p>
+
+        <h3>O que é o HTML e como funciona?</h3>
+        
+        <p>
+            O HTML é uma linguagem de marcação. Estas linguagens são constituídas de códigos que delimitam conteúdos específicos, segundo uma sintaxe própria. O HTML tem códigos para criar paginas na web. Estes códigos que definem o tipo de letra, qual o tamanho, cor, espaçamento, e vários outros aspectos do site.
+        </p>
+        
+        <p>
+            A estrutura básica do HTML é composta das tags &lt;! DOCTYPE&gt;, &lt;head&gt; e &lt;body&gt;. Obviamente, precisamos de mais tags para que a nossa página possua algum conteúdo, porém internamente o HTML é composto e executado por essas três principais tags.
+        </p>
+
+        <h3>O que são tags?</h3>
+        
+        <p>
+            As tags HTML são elementos usados para marcar e formatar os conteúdos: textual ou visual em documentos HTML. Cada tag HTML tem um nome e uma sintaxe que determina como ela deve ser aberta e fechada.
+        </p>
+        
+        <p>
+            Por exemplo: a tag de parágrafo é escrita como &lt;p&gt; e &lt;/p&gt;. Já para negritar pode ser usada a tag &lt;Strong&gt; ou &lt;b&gt; no início e &lt;/Strong&gt; ou &lt;/b&gt; para finalizar.
+        </p>
+
+        <p>
+            Para finalizar a utilização de uma tag pode ser usada uma barra (/), sendo que no caso das tags de autofechamento, não há necessidade da presença desse caractere.
+        </p>
+
+        <h3>O que são elementos?</h3>
+        
+        <p>
+            Os elementos HTML <strong>são componentes que informam a um navegador da web como estruturar e interpretar as partes do documento HTML</strong>. Um elemento HTML consiste de uma tag de inicio, tag de fechamento e um conteúdo inserido entre elas, lembrando que existem tags que não são fechada como por exemplo a tag &lt;img/&gt;
+        </p>
+        
+        <p>
+            <strong>Elementos HTML são usados para expressar partes do documento, como cabeçalhos, parágrafos e rodapés, e para incorporar contéudos como hyperlinks, textos e imagens</strong>. vale ressaltar também que um arquivo HTML escrito com elementos de forma semântica torna o HTML mais compreensivel, definindo melhor as diferentes seções e o latour da páginas web.
+        </p>
+
+        <h3>O que são atributos?</h3>
+
+        <p>
+            <strong>Atributos HTML são palavras especiais que fornecem informações adicionais sobre os elementos e definem caracteristicas ou propriedades adicionais destes elemento como altura e largura de uma imagem</strong>. Os atributos são especificados dentro da tag de início com um nome e um valor neste formato: nome "valor".
+        </p>
+
+        <h2 id="surgimento_CSS">O que CSS?</h2>
+        <hr>
+        
+        <P>
+            CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site. Pense  na decoração da sua página. Utilizando o CSS é possível alterar a cor do texto e do fundo, fonte e espaçamento entre parágrafos. Também pode criar tabelas, usar variações de layouts, ajustar imagens para suas respectivas telas e assim por diante.
+        </P>
+        
+        <h3>Como criar uma folha de estilo</h3>
+        
+        <p>
+            Para criar uma folha de estilos é bem simples. Basta abrir seu editor de códigos, como o Sublime, e criar um documento novo.
+
+            Depois de criado, salve como estilo.css, mesmo sem ainda ter escrito nada (este .css é o que define um arquivo ser reconhecido pelo navegador como a folha de estilo).
+        </p>
+
+        <h3>Como integrar o CSS no HTML</h3>
+        <p>
+            Após salvar como estilo.css precisamos colocar o arquivo em nosso arquivo HTML, porque é ele quem vai carregar o CSS, o CSS sozinho não faz site! E é com tags de referência que você avisa ao HTML que existe um arquivo de estilo para ele, veja:
+        </p>
+        
+        <p>
+            &lt;link rel=”stylesheet” type=”text/css” href=”estilo.css”&gt;
+        </p>
+
+        <h3>Estilos CSS Interno, Externo e Inline</h3>
+        
+        <p>
+            Vamos começar com o estilo <strong>interno</strong>. Estilos CSS feitos desta forma são carregados cada vez que um site é atualizado, o que pode aumentar o tempo de carregamento. Além disso, você não poderá usar o mesmo estilo CSS em várias páginas, pois está contido em uma única página. Mas a vantagem disso é que ter tudo em uma página facilita o compartilhamento do modelo para uma visualização.
+        </p>
+
+        <p>
+            O método <strong>externo</strong> pode ser o mais conveniente. Tudo é feito externamente em um arquivo .css. Isso significa que você pode fazer todo o estilo em um arquivo separado e aplicar o CSS a qualquer página desejada. O estilo externo também pode melhorar o tempo de carregamento.
+        </p>
+
+        <p>
+            Por fim, tem também o estilo Inline do CSS. Inline trabalha com elementos específicos que possuem a tag &lt;style&gt;. Cada componente deve ser estilizado, por isso talvez não seja o melhor ou o mais rápido para lidar com CSS. Mas pode ser útil, por exemplo, para alterar um único elemento, visualizar rapidamente as alterações ou se não tiver acesso aos arquivos CSS.
+        </p>
+
+        <h2 id="surgimento_js">O que é o javascript?</h2>
+        <hr>
+    
+        <p>
+            O JS ou JavaScript é uma linguagem de programação de alto-nível, criada no meio da década de 90, mais precisamente em 1996 pelo lendário programador Brendan Eich que, além de criar o JavaScript, foi também um dos fundadores da Mozilla Corporation.
+        </p>
+        
+        <p>
+            Ele criou a linguagem quando ainda trabalhava na Netscape Communications Corporation, originalmente criado para funcionar no navegador Netscape Navigator, seu objetivo era facilitar processos dentro de páginas web, tornado a programação de animações e alertas muito mais simples.
+        </p>
+
+        <p>
+            Pouco tempo depois, cerca de 1 ano depois do seu lançamento, a Microsoft começou a aceitar esta linguagem em seu navegador da época, o que foi um dos grandes impulsionadores para consolidar o que é Javascript como uma das principais linguagens de programação dos dias de hoje.
+        </p>
+
+        <p>
+            Desse tempo para cá, o JScript vem sofrendo diversas funções e aplicações diferentes, ficando mais versátil e completo de acordo com o tempo. Hoje, por exemplo, já é possível usar Javascript para criar aplicativos Desktop e Mobile, não só aplicações baseadas em web e navegadores.
+        </p>
+
+        <h3>Como o JavaScript se Diferencia das Outras Linguagens de Programação? </h3>
+
+        <p>
+            A linguagem de programação Javascript permite ao desenvolvedor implementar diversos itens de alto nível de complexidade em páginas web, como animações, mapas, gráficos ou informações que se atualizam em intervalos de tempo padrão, por exemplo.
+        </p>
+        
+        <p>
+            Javascript é a terceira camada do bolo de desenvolvimento web e front-end, junto com <a href="#surgimento">HTML</a>, <a href="#surgimento_CSS">CSS</a> e PHP.
+        </p>
+
+        <h3>As Vantagens do JavaScript</h3>
+        <p>
+            O JavaScript tem uma série de vantagens que fazem com ele seja a melhor escolha entre seus competidores. Especialmente em certos tipos de usos e casos. Abaixo estão apenas alguns dos benefícios de usar a linguagem JS:
+        </p>
+
+        <ol>
+            <li>Você não precisa de um compilador porque os navegadores de internet o interpretam com HTML;</li>
+            <li>É mais fácil de aprender do que as outras linguagens de programação;</li>
+            <li>Erros são bem mais fáceis de localizar e, por conta disso, de serem corrigidos;</li>
+            <li>Ele pode ser designado a certos elementos de páginas de internet ou eventos específicos, como cliques e rolagens de mouse personalizados;</li>
+            <li>É totalmente compatível com várias plataformas e navegadores;</li>
+            </ol>
+
+        <h3>As Fraquezas do JavaScript</h3>
+
+        <ol>
+            <li>Vulnerável a brechas de segurança;</li>
+            <li>Pode ser usado para executar códigos maliciosos no computador do usuário;</li>
+            <li>Nem sempre tem suporte a diferentes navegadores e dispositivos;</li>
+            <li>Os trechos de código em JS costumam ser bem grandes;</li>
+            <li>Pode ser renderizado diferentemente em vários dispositivos, o que pode ocasionar inconsistências.</li>
+            </ol>
+        
+        <h3>O Que Podemos Fazer com JavaScript (Aplicações)</h3>
+        
+        <p>
+            Como comentamos anteriormente, o JavaScript foi criado como uma linguagem de programação client-side. No início dos anos 2000 a empresa Google resolveu adotar esta linguagem para desenvolver algumas de suas aplicações como, por exemplo, o Gmail, mas existia um problema, os interpretadores de JS que os navegadores possuíam na época eram muito lentos. 
+        </p>
+
+        <p>
+            Como comentamos anteriormente, o JavaScript foi criado como uma linguagem de programação client-side. No início dos anos 2000 a empresa Google resolveu adotar esta linguagem para desenvolver algumas de suas aplicações como, por exemplo, o Gmail, mas existia um problema, os interpretadores de JS que os navegadores possuíam na época eram muito lentos. 
+        </p>
+
+        <h3>Node.js - Uma Definição para o Que é Javascript</h3>
+        
+        <p>
+            Graças ao Engine V8 e as novas proporções que o JS tomou, foram desenvolvidas diversas plataformas em cima desta linguagem.
+
+            Uma das mais importantes é a Node.js, que abriu novas portas para o que é Javascript, permitindo agora a criação também de aplicações server-side, abrindo um novo e imenso leque para os desenvolvedores que escreviam programas nesta linguagem.
+
+            Com a plataforma Node.js, é possível criar aplicações em servidor web e linha de comando usando JS.
+        </p>
+
+        <h3>Como adicionar JavaScript em um site?</h3>
+
+        <p>
+            Como regra geral, é uma ótima ideia incluir seu código JS dentro das tags &lt;header&gt; do seu site. A menos que ele precise ser executado em um tempo específico ou com um elemento específico de página.
+
+            Você também pode salvar seu código JS em arquivos separados, podendo usá-los pelo seu site sempre que quiser.
+        </p>
+
+        <h3>Como aprender Javascript</h3>
+        <p>
+            Por ser uma linguagem de programação muito famosa e difundida, existem diversos blogs com conteúdos interessantes, vídeos tutoriais e cursos online falando sobre este assunto.
+        </p>
+
+        <p>
+            Para aprender Javascript, é importante ter uma boa noção de lógica de programação, bem como dominar HTML e CSS para dar o suporte visual da sua programação.
+            Para te ajudar a aprender a programar nós criamos um conteúdo com os 20 lugares para aprender a programar de graça na web, que reúne diversos cursos com as mais diferentes metodologias para aprender a programar.
+        </p>
+        
+        <small><a href="#inicio">(voltar para o início)</a></small>
+        <hr>
+    </main>
+    
+    <footer>
+        <p>Atualização feita no dia 03/07/2023 às 09:00 por Célio Soares &copy;</p> 
+    </footer>
+</body>
+</html>
